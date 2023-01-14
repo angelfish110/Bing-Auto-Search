@@ -287,13 +287,13 @@ async function status(Points, Points_temp) {
         if (Points > 9600){
             gotcha = '收菜!';
         } else if (Points > 0 ){
-            gotcha = Math.ceil(Points / 270);
+            gotcha = Math.ceil(Points / 270) + '天';
         } else if (Points == -1) {
             gotcha = '';
         } else {
             gotcha = '';
         }
-        arr[r] = 'r_' + r + '  ' + Points + '  ' + Points_temp + '  ' + now + '  ' + gotcha + '天';
+        arr[r] = 'r_' + r + '  ' + Points + '  ' + Points_temp + '  ' + now + '  ' + gotcha;
 
         for (const v of arr) {
             if (v != undefined) {
