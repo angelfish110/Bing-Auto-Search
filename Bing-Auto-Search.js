@@ -284,10 +284,10 @@ async function status(Points, Points_temp) {
         let temp = 'BingAutoSearch_MicroSoft_COOKIE';
         let r = /_[0]*([0-9]+)/.exec(temp)[1];
         let gotcha;
-        if (Points > 9600){
+        if (Points >= 9600){
             gotcha = '收菜!';
         } else if (Points > 0 ){
-            gotcha = Math.ceil(Points / 270) + '天';
+            gotcha = Math.ceil((9600 - Points) / 270) + '天';
         } else if (Points == -1) {
             gotcha = '';
         } else {
