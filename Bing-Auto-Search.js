@@ -72,15 +72,15 @@ async function login() {
         .then(function(response) {
             if (response.status == 200) {
                 // console.log(response.data);
-                console.log(response.headers['set-cookie']);
+                // console.log(response.headers['set-cookie']);
                 username_temp = /<span id="id_n" title="(.*?)"/.exec(response.data);
                 if (username_temp) {
                     username = username_temp[1];
                     console.log('已登录账号: ' + username + '\n');
-                    //getPoints(1);
+                    getPoints(1);
                 } else {
                     console.log('未获取到登录信息\n');
-                    //getPoints(1);
+                    getPoints(1);
                 }
             } else {
                 console.log('未知错误');
