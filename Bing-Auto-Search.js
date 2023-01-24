@@ -169,7 +169,7 @@ async function main(Terminal, terminal, UserAgent) {
 
 // 获取积分
 var Points_temp = 0;
-var flag = 0;
+var flag3 = 0;
 function getPoints(flag) {
     axios_bing.get('https://rewards.bing.com/api/getuserinfo/', {})
         .then(function(response) {
