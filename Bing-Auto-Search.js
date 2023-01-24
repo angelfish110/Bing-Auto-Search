@@ -129,7 +129,7 @@ async function login2() {
         .catch(function(error) {
             catcherror(error);
             if (flag2 < 5) {
-                login();
+                login2();
                 flag2++;
             } else {
                 console.log('\n网络错误\n');
