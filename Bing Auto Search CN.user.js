@@ -3,7 +3,7 @@
 // @namespace    https://github.com/emtry/Bing-Auto-Search
 // @updateURL    https://raw.githubusercontent.com/emtry/Bing-Auto-Search/main/Bing%20Auto%20Search%20CN.user.js
 // @downloadURL  https://raw.githubusercontent.com/emtry/Bing-Auto-Search/main/Bing%20Auto%20Search%20CN.user.js
-// @version      1.0.1
+// @version      1.0.2
 // @description  Microsoft Rewards Bing Auto Search
 // @author       ehgenong
 // @match        https://*.bing.com/*
